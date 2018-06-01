@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node:
+    build: .
+  nginx:
+    image: "nginx:alpine"
+    ports:
+     - "8080:8081"
+    command: service nginx start 
